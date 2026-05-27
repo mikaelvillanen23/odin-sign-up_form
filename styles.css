@@ -64,10 +64,19 @@ body {
 
 .odin-container {
   display: flex;
-  background-color: rgba(0 0 0 / 30%);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0 0 0 / 50%);
+  color: white;
+  font-size: 5vh;
+  height: 18vh;
+  margin-top: 25vh;
+  padding: 0.5rem;
 }
 
-.odin-container > img {
+img {
+  height: 100%;
+  width: auto;
 }
 
 form {
