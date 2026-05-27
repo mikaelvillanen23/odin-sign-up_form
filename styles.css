@@ -53,6 +53,12 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   display: flex;
+  font-family: sans-serif;
+}
+
+h2 {
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .sidebar {
@@ -79,12 +85,57 @@ img {
   width: auto;
 }
 
+.wrap, section {
+  padding: 40px;
+}
+
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 65vw;
   height: 100vh;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(244, 255, 244);
 }
 
 section {
   background-color: white;
+  box-shadow: 4px 4px 4px rgb(199, 199, 199);
+}
+
+.control-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+input {
+  margin: 0 60px 16px 0;
+}
+
+button {
+  font-weight: bold;
+  background-color: #b5c73d;
+  border-radius: 8px;
+  border: none;
+  padding: 0.5em 2em;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 3px rgb(163, 163, 163);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #8a982f;
+  font-weight: bold;
 }
