@@ -105,12 +105,21 @@ section {
 
 .control-wrap {
   display: flex;
-  flex-wrap: wrap;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 .form-column {
   display: flex;
   flex-direction: column;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 label {
@@ -120,7 +129,49 @@ label {
 }
 
 input {
+  border: 1px solid black;
   margin: 0 60px 16px 0;
+  border-radius: 6px;
+  background: rgb(248, 255, 246);
+  flex-grow: 0;
+}
+
+input:focus {
+  outline: 2px solid blue;
+  background: white;
+  box-shadow: 2px 2px 4px rgb(186, 186, 186);
+}
+
+input:user-invalid {
+  outline: 2px dashed red;
+  outline-offset: 2px;
+  border-radius: 6px;
+  background-color: rgb(255, 245, 245);
+}
+
+input:user-invalid + span::after {
+  content: "❌";
+  position: absolute;
+  right: 32px;
+  bottom: 15px;
+}
+
+input:user-valid {
+  outline: 1px solid green;
+  border-radius: 6px;
+}
+
+input:user-valid + span::before {
+  content: "✔️";
+  position: absolute;
+  right: 32px;
+  bottom: 15px;
+}
+
+span {
+  font-size: 20px;
+  color: red;
+  vertical-align: middle;
 }
 
 button {
@@ -136,6 +187,10 @@ button {
 
 a {
   text-decoration: none;
-  color: #8a982f;
+  color: #6d7825;
   font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
