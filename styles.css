@@ -136,12 +136,6 @@ input {
   flex-grow: 0;
 }
 
-input:focus {
-  outline: 2px solid blue;
-  background: white;
-  box-shadow: 2px 2px 4px rgb(186, 186, 186);
-}
-
 input:user-invalid {
   outline: 2px dashed red;
   outline-offset: 2px;
@@ -166,6 +160,13 @@ input:user-valid + span::before {
   position: absolute;
   right: 32px;
   bottom: 15px;
+}
+
+input:focus {
+  outline: 2px solid blue;
+  outline-offset: 0;
+  background: white;
+  box-shadow: 2px 2px 4px rgb(186, 186, 186);
 }
 
 span {
