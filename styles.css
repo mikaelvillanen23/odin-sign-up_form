@@ -44,9 +44,9 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
-}
+} */
 
 
 /* Project specific styling starts here */
@@ -85,8 +85,10 @@ img {
   width: auto;
 }
 
-.wrap, section {
-  padding: 40px;
+.top-wrap,
+section,
+.bottom-wrap {
+  padding: 20px 0 20px 40px;
 }
 
 form {
@@ -100,23 +102,25 @@ form {
 
 section {
   background-color: white;
+  border-top: 1px solid rgb(237, 237, 237);
   box-shadow: 4px 4px 4px rgb(199, 199, 199);
 }
 
 .control-wrap {
   display: flex;
+  flex-direction: column;
 }
 
 p {
   margin-bottom: 20px;
 }
 
-.form-column {
+.form-row {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.input {
+.input-wrap {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -181,7 +185,7 @@ button {
   border-radius: 8px;
   border: none;
   padding: 0.5em 2em;
-  margin-bottom: 20px;
+  margin: 20px 0;
   box-shadow: 3px 3px 3px rgb(163, 163, 163);
   cursor: pointer;
 }
