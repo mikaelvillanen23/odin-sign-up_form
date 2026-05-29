@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('./fonts/PressStart2P-Regular.woff2') format('woff2'),
+      url('./fonts/PressStart2P-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* CSS Reset by Josh Comeau (https://www.joshwcomeau.com/css/custom-css-reset/) */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -74,7 +83,8 @@ h2 {
   align-items: center;
   background-color: rgba(0 0 0 / 50%);
   color: white;
-  font-size: 5vh;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: clamp(.5em, calc(1vh + 1vw), 4em);
   height: 18vh;
   margin-top: 25vh;
   padding: 0.5rem;
@@ -83,6 +93,7 @@ h2 {
 img {
   height: 100%;
   width: auto;
+  padding-right: 4px;
 }
 
 .top-wrap,
